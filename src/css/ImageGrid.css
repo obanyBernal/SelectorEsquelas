@@ -4,7 +4,16 @@
   padding-top: 2rem;
   color: rgb(32, 70, 116);
   text-align: center;
+  width: 100vw;
 }
+
+.image-grid-wrapper h1 {
+  margin-left: 3rem; /* Ajusta según lo que desees */
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+}
+
 
 .image-grid {
   display: grid;
