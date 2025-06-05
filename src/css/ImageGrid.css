@@ -1,0 +1,25 @@
+.image-grid-wrapper {
+  background-color: #e3f2fd; /* azul claro */
+  min-height: 100vh;
+  padding-top: 2rem;
+  color: rgb(32, 70, 116);
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.image-card {
+  cursor: pointer;
+  text-align: center;
+}
+
+.image-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+}
+

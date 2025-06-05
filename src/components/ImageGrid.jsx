@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ImageModal from './ImageModal';
+import '../css/ImageGrid.css'; // Importamos el archivo CSS
 
 const images = [
   { id: 1, src: '/miniaturas/fondo1.png', title: 'Fondo 1' },
@@ -20,16 +21,16 @@ const images = [
   { id: 16, src: '/miniaturas/fondo15.png', title: 'Fondo 15' },
 ];
 
-
 function ImageGrid() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   return (
-    <>
-      <div style={styles.grid}>
+    <div className="image-grid-wrapper">
+      <h1>Selector de Esquelas</h1>
+      <div className="image-grid">
         {images.map((img) => (
-          <div key={img.id} style={styles.card} onClick={() => setSelectedImage(img)}>
-            <img src={img.src} alt={img.title} style={styles.thumbnail} />
+          <div key={img.id} className="image-card" onClick={() => setSelectedImage(img)}>
+            <img src={img.src} alt={img.title} className="image-thumbnail" />
             <p>{img.title}</p>
           </div>
         ))}
@@ -37,25 +38,8 @@ function ImageGrid() {
       {selectedImage && (
         <ImageModal image={selectedImage} onClose={() => setSelectedImage(null)} />
       )}
-    </>
+    </div>
   );
 }
-
-const styles = {
-  grid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, minmax(150px, 1fr))',
-    gap: '1rem',
-    padding: '1rem'
-  },
-  card: {
-    cursor: 'pointer',
-    textAlign: 'center'
-  },
-  thumbnail: {
-    width: '100%',
-    borderRadius: '8px'
-  }
-};
 
 export default ImageGrid;
