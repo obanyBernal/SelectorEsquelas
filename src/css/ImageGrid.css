@@ -14,6 +14,14 @@
   text-align: left;
 }
 
+.image-grid-wrapper p {
+  margin-left: 3rem; /* Ajusta según lo que desees */
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+
+
 
 .image-grid {
   display: grid;

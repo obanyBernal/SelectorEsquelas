@@ -1,13 +1,15 @@
 .pensamientos-wrapper {
   background-color: #f5f9ff;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 2rem 1rem;
   color: #204674;
-  text-align: center;
+  text-align: left;
   width: 100vw;
   font-size: small;
-  text-align: left;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 
 .pensamientos-wrapper h1 {
   margin-left: 3rem; /* Ajusta según lo que desees */
@@ -15,6 +17,32 @@
   font-weight: bold;
   text-align: left;
 }
+
+.pensamientos-wrapper h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.pensamientos-wrapper h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.pensamientos-wrapper p {
+  margin: 0;
+  padding: 0 1rem;
+  font-size: 0.8rem;
+  text-align: left;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
 
 
 .pensamientos-list {
@@ -32,7 +60,11 @@
   text-align: left;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  max-width: 100%;
 }
+
 
 .pensamiento-card:hover {
   background-color: #d2e8fc;
@@ -64,7 +96,7 @@
   background-color: #0b558e;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -73,6 +105,7 @@
   justify-content: flex-end;
   gap: 1rem;
   margin-top: 1.5rem;
+  border-radius: 20px;
 }
 
 .modal-buttons button {
@@ -80,7 +113,7 @@
   background-color: #0b558e;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s;
 }

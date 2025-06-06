@@ -6,6 +6,7 @@ function ImageModal({ image, onClose }) {
     <div className="image-modal-overlay" onClick={onClose}>
       <div className="image-modal-container" onClick={(e) => e.stopPropagation()}>
         <img src={image.src} alt={image.title} className="image-modal-img" />
+              <h2>Envía el número de fondo a tu asesor</h2>
         <h3 className="image-modal-title">{image.title}</h3>
         <button onClick={onClose} className="image-modal-button">Cerrar</button>
       </div>

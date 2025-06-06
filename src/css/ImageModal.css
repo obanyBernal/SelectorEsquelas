@@ -10,6 +10,11 @@
   z-index: 1000;
 }
 
+.image-grid-wrapper h2 {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
 .image-modal-container {
   background: #fff;
   padding: 1rem;

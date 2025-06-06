@@ -23,6 +23,11 @@ function SelectorPensamientos() {
   return (
     <div className="pensamientos-wrapper">
       <h1>Selector de Pensamientos</h1>
+      <p>
+        A continuación te presentamos una lista de pensamientos que la Unidad de
+        Duelo y Acompañamiento ha preparado,
+      </p>
+      <p>Da clic sobre el que más te guste para poder leerlo</p>
       <div className="pensamientos-list">
         {pensamientos.map((texto, index) => (
           <div
@@ -30,7 +35,9 @@ function SelectorPensamientos() {
             className="pensamiento-card"
             onClick={() => setSelected(texto)}
           >
-            <p><strong>{index + 1}.</strong> {texto.slice(0, 100)}...</p>
+            <p>
+              <strong>{index + 1}.</strong> {texto.slice(0, 100)}...
+            </p>
           </div>
         ))}
       </div>
@@ -41,11 +48,18 @@ function SelectorPensamientos() {
             className="pensamiento-modal-content"
             onClick={(e) => e.stopPropagation()}
           >
-            <p><strong>Pensamiento {pensamientos.indexOf(selected) + 1}:</strong> {selected}</p>
+            <h3>
+              <strong>Pensamiento {pensamientos.indexOf(selected) + 1}:</strong>{" "}
+              {selected}
+            </h3>
             <div className="modal-buttons">
               <button onClick={handleCopy}>Copiar pensamiento</button>
               <button onClick={() => setSelected(null)}>Cerrar</button>
             </div>
+            <h2>
+              Da clic en copiar pensamiento y pegalo en el chat de WhatsApp de
+              tu asesor para compartir el pensamiento que has seleccionado.
+            </h2>
           </div>
         </div>
       )}

@@ -27,6 +27,9 @@ function ImageGrid() {
   return (
     <div className="image-grid-wrapper">
       <h1>Selector de Esquelas</h1>
+      <p>Puedes 
+       seleccionar una imagen para verla, en la parte inferior
+       podrás ver el número de fondo </p>
       <div className="image-grid">
         {images.map((img) => (
           <div key={img.id} className="image-card" onClick={() => setSelectedImage(img)}>
