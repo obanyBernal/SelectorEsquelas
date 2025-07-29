@@ -12,6 +12,21 @@ const pensamientos = [
   "Aunque pase por quebradas oscuras, no temo ningún mal, porque tú estás conmigo con tu vara y tu bastón, y al verlas voy sin miedo. Salmo 23:4",
   "Le dijo Jesús: Yo soy la resurrección y la vida; el que cree en mí, aunque esté muerto, vivirá. Y todo aquel que vive y cree en mí, no morirá eternamente. ¿Crees esto? Juan 11:25-26",
   "Si el hombre muere, ¿Puede volver a vivir? Esperaré todos los días de mi servicio obligatorio hasta que llegue mi liberación. Tú llamarás y yo responderé. Job 14:14-15",
+    "Así que no temas, porque yo estoy contigo; no te angusties, porque yo soy tu Dios. Te fortaleceré y te ayudaré; te sostendré con mi diestra victoriosa. Isaías 41:10",
+  "Aunque pase por el valle de sombra de muerte, no temeré mal alguno, porque tú estás conmigo: tu vara y tu cayado me infunden aliento. Salmos 23:4",
+  "Dios es nuestro amparo y nuestra fortaleza, nuestra ayuda segura en momentos de angustia. Salmo 46:1",
+  "He peleado la buena batalla, he terminado la carrera, he guardado la fe, ahora me toca recibir la corona merecida que Dios que es justo me dará. 2ª Timoteo 4:7",
+  "Porque para mí el vivir es Cristo y el morir es ganancia. Filipenses 1:21",
+  "Así también ustedes ahora sienten tristeza, pero yo los volveré a ver y su corazón se llenará de alegría, y nadie les podrá arrebatar ese gozo. Juan 16:22",
+  "Este es nuestro Dios, ahora y para siempre. El Dios nuestro nos guiará más allá de la muerte. Salmo 48:14",
+  "En cada pensamiento y en cada silencio, tu recuerdo vive con nosotros siempre.",
+  "Nos queda tu risa, tus abrazos y todo lo que fuiste… porque aunque te hayas ido, sigues siendo parte de nosotros.",
+  "Tu partida deja un vacío inmenso, pero tu amor y recuerdos vivirán por siempre en nuestros corazones.",
+  "Dejas un legado de amor y fortaleza que nunca olvidaremos.",
+  "Gracias por darnos tanto amor en tan poco tiempo. Tu luz es eterna, y tu recuerdo, nuestro mayor tesoro.",
+  "Te fuiste sin avisar, dejando un silencio que duele… pero también un amor que jamás se irá.",
+  "Fuiste un regalo de amor que la vida nos dio por un momento, y que el cielo abrazó para siempre.",
+  "Tu luz fue breve, pero iluminó nuestras almas para siempre. Gracias por habernos elegido.",
 ];
 
 function SelectorPensamientos() {

@@ -20,6 +20,11 @@
   text-align: left;
 }
 
+h4 {
+  text-align: left;
+  padding: 0; /* o los valores que necesites */
+  padding-left: 3rem;
+}
 
 
 

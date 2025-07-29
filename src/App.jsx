@@ -18,6 +18,7 @@ function App() {
         <nav className="navbar">
           <div className="navbar-left">
             <img src={logo} alt="Logo" className="navbar-logo" />
+            <h4>Versión 1.2</h4>
           </div>
           <div className="navbar-links">
             <NavLink
@@ -32,6 +33,16 @@ function App() {
             >
               Selector de Pensamientos
             </NavLink>
+            <button
+              onClick={() => {
+                const shareUrl = "http://selector-esquelas.vercel.app/";
+                navigator.clipboard.writeText(shareUrl);
+                alert("¡Enlace copiado para compartir!");
+              }}
+              className="share-button"
+            >
+              Compartir App
+            </button>
           </div>
         </nav>
         <Routes>
