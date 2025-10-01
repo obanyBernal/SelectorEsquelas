@@ -11,6 +11,18 @@ import SelectorPensamientos from "./components/SelectorPensamientos";
 import "./css/App.css"; // Para estilos generales y del menú
 import logo from "./assets/logo.png";
 
+const shareUrl = "https://selector-esquelas.vercel.app/"; // asegúrate que sea https
+const defaultShareText =
+  "Toca la url para ver los fondos y pensamientos disponibles";
+
+function shareViaWhatsApp(customText) {
+  const text = customText?.trim() || defaultShareText;
+  const payload = encodeURIComponent(`${text} ${shareUrl}`);
+  const waUrl = `https://wa.me/?text=${payload}`;
+  // En móviles abre la app; en desktop, WhatsApp Web
+  window.open(waUrl, "_blank", "noopener,noreferrer");
+}
+
 function App() {
   return (
     <Router>
@@ -34,14 +46,12 @@ function App() {
               Selector de Pensamientos
             </NavLink>
             <button
-              onClick={() => {
-                const shareUrl = "http://selector-esquelas.vercel.app/";
-                navigator.clipboard.writeText(shareUrl);
-                alert("¡Enlace copiado para compartir!");
-              }}
               className="share-button"
+              onClick={() =>
+                shareViaWhatsApp(/* aquí puedes pasar un texto dinámico */"Funerales Guatemala y Parque Memorial el Edén- Servir, Confortar y Acompañar es nuestra misión | Por favor selecciona un fondo y un pensamiento para honrar a tu ser amado")
+              }
             >
-              Compartir App
+              Compartir por WhatsApp
             </button>
           </div>
         </nav>
