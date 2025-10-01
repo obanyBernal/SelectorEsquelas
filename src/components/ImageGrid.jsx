@@ -48,7 +48,7 @@ function ImageGrid() {
 
   return (
     <div className="image-grid-wrapper">
-      <h1>Selector de Esquelas</h1>
+      <h1>Selector de Fondos</h1>
       <p>Puedes 
        seleccionar una imagen para verla, en la parte inferior
        podrás ver el número de fondo </p>

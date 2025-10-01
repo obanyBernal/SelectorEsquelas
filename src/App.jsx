@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   NavLink,
@@ -25,7 +25,7 @@ function App() {
               to="/esquelas"
               className={({ isActive }) => (isActive ? "active-link" : "")}
             >
-              Selector de Esquelas
+              Selector de Fondos
             </NavLink>
             <NavLink
               to="/pensamientos"
