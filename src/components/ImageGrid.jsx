@@ -13,9 +13,9 @@ const images = [
   { id: 8, src: '/miniaturas/fondo8.png', title: 'Fondo 8' },
   { id: 9, src: '/miniaturas/fondo9.png', title: 'Fondo 9' },
   { id: 10, src: '/miniaturas/fondo10.png', title: 'Fondo 10' },
-  { id: 11, src: '/miniaturas/fondo11.png', title: 'Fondo 11' },
-  { id: 12, src: '/miniaturas/fondo12.png', title: 'Fondo 12 Rosa' },
-  { id: 13, src: '/miniaturas/fondo13.png', title: 'Fondo 13 Azul' },
+  { id: 11, src: '/miniaturas/fondo11.png', title: 'Fondo 11 azul' },
+  { id: 12, src: '/miniaturas/fondo12.png', title: 'Fondo 12 rosa' },
+  { id: 13, src: '/miniaturas/fondo13.png', title: 'Fondo 13' },
   { id: 14, src: '/miniaturas/fondo14.png', title: 'Fondo 14' },
   { id: 15, src: '/miniaturas/fondo15.png', title: 'Fondo 15' },
   { id: 16, src: '/miniaturas/fondo16.png', title: 'Fondo 16' },
@@ -26,8 +26,8 @@ const images = [
   { id: 21, src: '/miniaturas/fondo21.png', title: 'Fondo 21' },
   { id: 22, src: '/miniaturas/fondo22.png', title: 'Fondo 22' },
   { id: 23, src: '/miniaturas/fondo23.png', title: 'Fondo 23' },
-  { id: 24, src: '/miniaturas/fondo24.png', title: 'Fondo 24' },
-  { id: 25, src: '/miniaturas/fondo25.png', title: 'Fondo 25' },
+  { id: 24, src: '/miniaturas/fondo24.png', title: 'Fondo 24 celeste' },
+  { id: 25, src: '/miniaturas/fondo25.png', title: 'Fondo 25 rosa' },
   { id: 26, src: '/miniaturas/fondo26.png', title: 'Fondo 26' },
   { id: 27, src: '/miniaturas/fondo27.png', title: 'Fondo 27' },
   { id: 28, src: '/miniaturas/fondo28.png', title: 'Fondo 28' },
@@ -40,7 +40,6 @@ const images = [
   { id: 35, src: '/miniaturas/fondo35.png', title: 'Fondo 35' },
   { id: 36, src: '/miniaturas/fondo36.png', title: 'Fondo 36' },
   { id: 37, src: '/miniaturas/fondo37.png', title: 'Fondo 37' },
-  { id: 38, src: '/miniaturas/fondo38.png', title: 'Fondo 38' },
 ];
 
 function ImageGrid() {
